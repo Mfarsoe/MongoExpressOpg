@@ -14,3 +14,6 @@ På klientsiden skal der laves en brugergrænseflade, hvor man kan udføre CRUD 
 I må meget gerne løse opgaven i grupper.
  
 Ekstra: Lav authentication og authorization med JWT, så man skal være logget ind, for at kunne udføre create, update og delete, mens man kan lave read (f.eks. se en oversigt over biler) uden at være logget ind.
+
+# Setup
+TODO
