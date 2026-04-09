@@ -17,3 +17,6 @@ Ekstra: Lav authentication og authorization med JWT, så man skal være logget i
 
 # Setup
 TODO
+
+# MongoDB
+LocalDB
