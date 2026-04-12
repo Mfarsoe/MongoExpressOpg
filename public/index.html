@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Opgave</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Studerende</h1>
+
+      <section class="panel">
+        <h2 id="formTitle">Opret studerende</h2>
+        <form id="studentForm">
+          <input type="hidden" id="studentId" />
+
+          <label for="name">Navn</label>
+          <input id="name" name="name" type="text" required minlength="2" />
+
+          <label for="age">Alder</label>
+          <input id="age" name="age" type="number" required min="0" max="130" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="team">Hold</label>
+          <input id="team" name="team" type="text" required />
+
+          <div class="actions">
+            <button type="submit" id="saveBtn">Gem</button>
+            <button type="button" id="cancelEditBtn" class="secondary" hidden>Annuller redigering</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Oversigt</h2>
+        <div class="searchRow">
+          <input id="searchInput" type="text" placeholder="Søg på navn, email eller hold" />
+          <button id="searchBtn" type="button">Søg</button>
+          <button id="resetSearchBtn" type="button" class="secondary">Nulstil</button>
+        </div>
+
+        <p id="message" class="message"></p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>Alder</th>
+              <th>Email</th>
+              <th>Hold</th>
+              <th>Handlinger</th>
+            </tr>
+          </thead>
+          <tbody id="studentsTableBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

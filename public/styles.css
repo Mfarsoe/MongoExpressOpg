@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px 24px;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 8px;
+}
+
+.actions,
+.searchRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+button {
+  border: 1px solid #2a4f9c;
+  background: #2a4f9c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.secondary {
+  background: #fff;
+  color: #2a4f9c;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.message {
+  min-height: 20px;
+  font-weight: 600;
+}
+
+.message.error {
+  color: #a40000;
+}
+
+.message.success {
+  color: #0c6b1f;
+}

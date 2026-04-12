@@ -1,10 +1,10 @@
 {
   "name": "mongoexpressopg",
   "version": "1.0.0",
-  "description": "Øvelse: Fetch-opgaven (CRUD med Fetch, Node.js og MongoDB) I skal prøve at forbinde tre emner vi har arbejdet med: Fetch, Node.js og MongoDB.",
-  "main": "index.js",
+  "description": "Øvelse: Fetch-opgaven (CRUD med Fetch, Node.js og MongoDB).",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Mfarsoe/MongoExpressOpg#readme",
   "dependencies": {
+    "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "mongoose": "^9.4.1"
   }

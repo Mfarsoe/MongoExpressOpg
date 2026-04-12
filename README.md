@@ -16,7 +16,25 @@ I må meget gerne løse opgaven i grupper.
 Ekstra: Lav authentication og authorization med JWT, så man skal være logget ind, for at kunne udføre create, update og delete, mens man kan lave read (f.eks. se en oversigt over biler) uden at være logget ind.
 
 # Setup
-TODO
+1. Sørg for at have MongoDB kørende lokalt.
+2. Installer dependencies:
+	```bash
+	npm install
+	```
+3. Start applikationen:
+	```bash
+	npm start
+	```
+4. Åbn i browser:
+	```
+	http://localhost:3000
+	```
 
-# MongoDB
-LocalDB
+## API endpoints
+
+- `GET /api/students` - Hent alle studerende - R
+- `GET /api/students?q=tekst` - Søg i navn, email og hold - R
+- `GET /api/students/:id` - Hent én studerende - R
+- `POST /api/students` - Opret studerende - C
+- `PUT /api/students/:id` - Opdater studerende - U
+- `DELETE /api/students/:id` - Slet studerende - D
