@@ -14,6 +14,7 @@ const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 const resetSearchBtn = document.getElementById('resetSearchBtn');
 
+// Helper functions
 function setMessage(text, type = '') {
   messageElement.textContent = text;
   messageElement.className = `message ${type}`.trim();
@@ -39,13 +40,15 @@ function fillForm(student) {
 function renderStudents(students) {
   studentsTableBody.innerHTML = '';
 
+  // No students found
   if (students.length === 0) {
     const row = document.createElement('tr');
     row.innerHTML = '<td colspan="5">Ingen studerende fundet</td>';
     studentsTableBody.appendChild(row);
     return;
   }
-
+  
+  // Render students
   students.forEach((student) => {
     const row = document.createElement('tr');
 
